@@ -1,1 +1,6 @@
-
+.questionCards{
+    display: none;
+}
+.questionCards:first-child{
+    display: block;
+}
