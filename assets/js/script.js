@@ -38,6 +38,7 @@ function adjustTimer(num){
 
 function stopTimer(reason){
     clearInterval(timeInterval);
+    clearAll();
     let message;
     if(reason === "timed_out"){
         message = "You Ran out of time!";
@@ -50,8 +51,6 @@ function stopTimer(reason){
     complete.setAttribute("style", "display:flex;");
 }
 
-start.addEventListener("click", startTimer);
-  
   //
   function get_info(){
     let current_question = this.parentElement;
@@ -67,9 +66,18 @@ start.addEventListener("click", startTimer);
     setTimeout(function (){answer_result.innerHTML = ""}, 500);
     //Open the next question if it exists, if there are no more questions, stop the countdown (clear the interval)
     var nextUP = current_question.nextElementSibling;
-    if(nextUP) {
+    if(nextUP && timeLeft !=0) {
         nextUP.setAttribute("style", "display:flex;");
     }else{
         stopTimer("finished");
     }
 };
+
+function clearAll(){
+    let all_questions = document.getElementsByClassName("questionCards"); 
+    for(var i = 0; i < all_questions.length; i++){
+        all_questions[i].style.display = "none";
+    }
+}
+
+start.addEventListener("click", startTimer);
