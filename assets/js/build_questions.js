@@ -1,47 +1,47 @@
 const questions_obj = {
     Question_1 : {
-        text: "Question 1 text",
+        text: "In which HTML tag do we put the JavaScript code?",
         answers: [
-            ["TEXT-c", "Correct"],
-            ["TEXT", "Wrong"],
-            ["TEXT", "Wrong"],
-            ["TEXT", "Wrong"]
+            ["The script tag", "Correct"],
+            ["The rel tag", "Wrong"],
+            ["The javascript tag", "Wrong"],
+            ["The js tag", "Wrong"]
         ]
     },
     Question_2 : {
-        text: "Question 2 text",
+        text: "How would you call a function named “sum”?",
         answers: [
-            ["TEXT-c", "Correct"],
-            ["TEXT", "Wrong"],
-            ["TEXT", "Wrong"],
-            ["TEXT", "Wrong"]
+            ["sum()", "Correct"],
+            ["call function sum()", "Wrong"],
+            ["call sum()", "Wrong"],
+            ["None of the above", "Wrong"]
         ]
     },
     Question_3 : {
-        text: "Question 3 text",
+        text: "What is the correct syntax for referring to an external script called “myscript.js”?",
         answers: [
-            ["TEXT-c", "Correct"],
-            ["TEXT", "Wrong"],
-            ["TEXT", "Wrong"],
-            ["TEXT", "Wrong"]
+            ["<script href=\"myscript.js\">", "Wrong"],
+            ["<script name=\"myscript.js\">", "Wrong"],
+            ["<script src=\"myscript.js\">", "Correct"],
+            ["All the answers are true", "Wrong"]
         ]
     },
     Question_4 : {
-        text: "Question 4 text",
+        text: "Where is the right place to insert JavaScript code?",
         answers: [
-            ["TEXT-c", "Correct"],
-            ["TEXT", "Wrong"],
-            ["TEXT", "Wrong"],
-            ["TEXT", "Wrong"]
+            ["The two sections <head> and <body> are correct", "Correct"],
+            ["<body> section", "Wrong"],
+            ["<head> section", "Wrong"],
+            ["None of the above", "Wrong"]
         ]
     },
     Question_5 : {
-        text: "Question 5 text",
+        text: "How would you write an IF condition in JavaScript?",
         answers: [
-            ["TEXT-c", "Correct"],
-            ["TEXT", "Wrong"],
-            ["TEXT", "Wrong"],
-            ["TEXT", "Wrong"]
+            ["if (a == 2)", "Correct"],
+            ["if a == 2 else", "Wrong"],
+            ["if a = 2", "Wrong"],
+            ["if a = 2 then", "Wrong"]
         ]
     }
 };
