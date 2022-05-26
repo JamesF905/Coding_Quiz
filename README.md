@@ -10,7 +10,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/JamesF905/Coding_Quiz">
-    <img src="" alt="Logo" width="80" height="80">
+    <img src="images/Project_Screenshot.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Coding Quiz</h3>
