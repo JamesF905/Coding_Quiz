@@ -14,7 +14,7 @@ const questions_obj = {
             ["sum()", "Correct"],
             ["call function sum()", "Wrong"],
             ["call sum()", "Wrong"],
-            ["None of the above", "Wrong"]
+            ["None of these", "Wrong"]
         ]
     },
     Question_3 : {
@@ -32,7 +32,7 @@ const questions_obj = {
             ["The two sections <head> and <body> are correct", "Correct"],
             ["<body> section", "Wrong"],
             ["<head> section", "Wrong"],
-            ["None of the above", "Wrong"]
+            ["None of these", "Wrong"]
         ]
     },
     Question_5 : {
@@ -61,14 +61,14 @@ for (var key in questions_obj) {
     
     var answers_array = questions_obj[key].answers;
     answers_array = shuffle(answers_array);
-    
+    var i=1;
     answers_array.forEach(keys => {
         var btns = document.createElement("button");
         btns.setAttribute("class", "answers_btn");
-        btns.textContent = keys[0];
-        btns.setAttribute("data-answer", keys[1]);
-        
+        btns.textContent = i+") "+keys[0];
+        btns.setAttribute("data-answer", keys[1]);        
         card.appendChild(btns);
+    i++;
     });
 
     question_section.appendChild(card);
