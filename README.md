@@ -29,7 +29,7 @@
 
 [![Coding Quiz][product-screenshot]](https://jamesf905.github.io/Coding_Quiz/)
 
-This module's Challenge requires me to create an application that an employee can use to generate a random password based on criteria they've selected. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes. I will use concepts learned in this weeks module to help complete the task.
+This module's challenge requires me to create a quiz game based on Javascript. Users will answer questions within a time limit, and be given a final score that they can add to a high scrore list. This list can be reset, and the game can be played multiple times by the user. The challenge willshowcase alomost everything we have learned during this module.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

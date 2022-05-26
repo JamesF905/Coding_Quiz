@@ -4,6 +4,7 @@ var start = document.querySelector("#Start_Quiz");
 var timer = document.getElementById('timer_status');
 var question_section = document.querySelector("#questions");
 var answer_result = document.querySelector("#answer_status");
+var complete = document.querySelector("#completed_card");
 
 // Timer that counts down from 75
 var timeLeft = 75;
@@ -35,8 +36,10 @@ function stopTimer(reason){
     }else if(reason === "finished"){
         message = "All Done!";
     }
-    //displayMessage(message);
-    question_section.innerHTML = message;
+    //Display results
+    complete.querySelector("h1").textContent = message;
+    complete.querySelector("p").textContent = "Your Score is "+timeLeft;
+    complete.setAttribute("style", "display:flex;");
 }
 
 function adjustTimer(num){
@@ -162,11 +165,12 @@ function shuffle(array) {
     current_question.setAttribute("data-status", "Answered");
     current_question.setAttribute("style", "display:none;");
         
-    var toot = this.getAttribute("data-answer");
+    var res = this.getAttribute("data-answer");
     // if wrong reduce time by 15 seconds
-    if(toot === "Wrong") adjustTimer(15);
+    if(res === "Wrong") adjustTimer(15);
     //send the result message to the answer_result element  
-    answer_result.innerHTML = "<hr />"+toot+"!";
+    answer_result.innerHTML = "<hr />"+res+"!";
+    setTimeout(function (){answer_result.innerHTML = ""}, 500);
     //Open the next question if it exists, if there are no more questions, stop the countdown (clear the interval)
     var nextUP = current_question.nextElementSibling;
     if(nextUP) {

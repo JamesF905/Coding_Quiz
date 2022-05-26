@@ -34,7 +34,7 @@ height: 20px;
     margin: 50px auto;
 }
 
-#Start_Quiz, .answers_btn{
+#Start_Quiz, .answers_btn, #add_hs{
     background-color: rgb(111, 0, 158);
     border-radius: 5px;
     color: antiquewhite;
@@ -76,4 +76,14 @@ button:active{
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+#completed_card{
+    display: none;
+    flex-direction:column;
+    align-items: center;
+}
+
+#completed_card > *{
+    height: 50px;
 }
