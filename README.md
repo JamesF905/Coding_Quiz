@@ -29,7 +29,7 @@
 
 [![Coding Quiz][product-screenshot]](https://jamesf905.github.io/Coding_Quiz/)
 
-This module's challenge requires me to create a quiz game based on Javascript. Users will answer questions within a time limit, and be given a final score that they can add to a high scrore list. This list can be reset, and the game can be played multiple times by the user. The challenge willshowcase alomost everything we have learned during this module.
+This module's challenge requires me to create a quiz game based on Javascript. Users will answer questions within a time limit, and be given a final score that they can add to a high score list. This list can be reset, and the game can be played multiple times by the user. The challenge will showcase alomost everything we have learned during this module.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
