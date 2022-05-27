@@ -78,7 +78,7 @@ button:active{
     text-align: center;
 }
 
-#completed_card{
+#completed_card, #highscores{
     display: none;
     flex-direction:column;
     align-items: center;

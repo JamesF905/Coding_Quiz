@@ -21,15 +21,20 @@
         <button id="Start_Quiz">Start Quiz</button>
       </div>
       <div id="completed_card">
-        <h1></h1>
-        <div>
-          <p></p>
-          <label for="hs_form">Enter Initials: </label>
-          <form name="hs_form">
-            <input type="text">
-            <button id="add_hs">Submit</button>
-          </form>
-        </div>
+        <h1></h1>        
+        <p></p>
+        <form id="highscores_form">
+          <label for="hs_ini">Enter Initials: </label>
+          <input id="initials" type="text" name="hs_ini">
+          <button id="form_submit" type="submit" form="myForm" value="Submit">Submit</button>
+        </form>        
+      </div>
+      <div id="highscores">
+        <h1>Highscores</h1>
+        <ul>
+        </ul>
+        <button id="go_back">Go Back</button>
+        <button id="clear_highscores">Clear Highscores</button>
       </div>
     </section>
     <section id="answer_status">
