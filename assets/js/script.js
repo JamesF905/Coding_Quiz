@@ -21,6 +21,7 @@ var timeInterval;
 function startTimer() { 
     header_card.setAttribute("style", "display:none;");
     document.querySelector(".questionCards").setAttribute("style", "display:flex;");
+    veiw_highscores.disabled = true;
     // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
     timeInterval = setInterval(function () {
         // As long as the `timeLeft` is greater than 1        
@@ -94,6 +95,7 @@ function clearAll(target){
 
 function highScores(event){
     event.preventDefault();
+    veiw_highscores.disabled = false;
 /*
     let player_score = [ 
         {num : 1, app:'helloworld',message:'message'}
@@ -111,6 +113,7 @@ function highScores(event){
     }
     localStorage.setItem("player_scores", JSON.stringify(scores_array));
     
+    //reset the forms and timer variable
     timeLeft = 75; 
     timer.textContent = "Time: "+timeLeft;
     initials.value = "";
@@ -122,10 +125,11 @@ function highScores(event){
 function render_hs(){    
     var hs = JSON.parse(localStorage.getItem("player_scores"));
     if (hs !== null) {
-        hs_list.textContent = "";
+        hs_list.innerHTML = "";
+        hs.sort(function(a,b){return b[1]-a[1];});
         for(i=0; i<hs.length; i++){
             var li = document.createElement("li");
-            li.textContent = hs[i][0]+" - "+hs[i][1];
+            li.textContent = i+1+") "+hs[i][0]+" - "+hs[i][1];
             hs_list.appendChild(li);
         }
     }   
